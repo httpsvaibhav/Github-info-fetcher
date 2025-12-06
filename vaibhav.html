@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profile Info Fetcher</title>
+    <link rel="stylesheet" href="vaibhav.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>GitHub Info Fetcher</h1>
+
+        <div class="input-group">
+            <label for="username">GitHub Username</label>
+            <input id="username" type="text" placeholder="Enter GitHub username..." />
+        </div>
+
+        <div class="input-group">
+            <label for="info">Select Info to Fetch</label>
+            <select id="info">
+                <option value="login">Login</option>
+                <option value="id">User ID</option>
+                <option value="node_id">Node ID</option>
+                <option value="avatar_url">Avatar URL</option>
+                <option value="html_url">GitHub Profile URL</option>
+                <option value="followers_url">Followers URL</option>
+                <option value="following_url">Following URL</option>
+                <option value="gists_url">Gists URL</option>
+                <option value="starred_url">Starred Repos URL</option>
+                <option value="subscriptions_url">Subscriptions URL</option>
+                <option value="organizations_url">Organizations URL</option>
+                <option value="repos_url">Repositories URL</option>
+                <option value="events_url">Events URL</option>
+                <option value="received_events_url">Received Events URL</option>
+                <option value="type">User Type</option>
+                <option value="user_view_type">View Type</option>
+                <option value="site_admin">Site Admin</option>
+                <option value="name">Full Name</option>
+                <option value="company">Company</option>
+                <option value="blog">Blog</option>
+                <option value="location">Location</option>
+                <option value="email">Email</option>
+                <option value="hireable">Hireable</option>
+                <option value="bio">Bio</option>
+                <option value="twitter_username">Twitter Username</option>
+                <option value="public_repos">Public Repositories</option>
+                <option value="public_gists">Public Gists</option>
+                <option value="followers">Followers Count</option>
+                <option value="following">Following Count</option>
+                <option value="created_at">Created At</option>
+                <option value="updated_at">Updated At</option>
+            </select>
+        </div>
+
+        <button class="btn">Fetch Info</button>
+
+        <div class="result-box">
+            <h3>Result:</h3>
+            <p id="result">Output will appear here...</p>
+        </div>
+    </div>
+    <script src="vaibhav.js"></script>
+</body>
+</html>
