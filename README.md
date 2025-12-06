@@ -50,5 +50,3 @@ This project uses **HTML, CSS, and JavaScript (Fetch API)** to interact with the
 <img width="1436" height="768" alt="image" src="https://github.com/user-attachments/assets/303b911d-834f-4889-ace4-61cfc5aef774" />
 
 
-> *(Add your project screenshot here)*  
-Example:
