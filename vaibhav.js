@@ -1,10 +1,10 @@
-// Select elements from DOM
+
 const usernameInput = document.getElementById("username");
 const infoSelect = document.getElementById("info");
 const resultBox = document.getElementById("result");
 const fetchBtn = document.querySelector(".btn");
 
-// Fetch button click handler
+
 fetchBtn.addEventListener("click", () => {
     const username = usernameInput.value.trim();
     const infoKey = infoSelect.value;
@@ -14,7 +14,7 @@ fetchBtn.addEventListener("click", () => {
         return;
     }
 
-    // GitHub API endpoint
+
     const url = `https://api.github.com/users/${username}`;
 
     resultBox.textContent = "Fetching data... ⏳";
@@ -27,7 +27,7 @@ fetchBtn.addEventListener("click", () => {
             return response.json();
         })
         .then(data => {
-            // Get specific field selected by user
+            
             const value = data[infoKey];
 
             // Handling null values
@@ -36,7 +36,7 @@ fetchBtn.addEventListener("click", () => {
                 return;
             }
 
-            // Displaying Avatar (special case)
+            
             if (infoKey === "avatar_url") {
                 resultBox.innerHTML = `
                     <strong>${infoKey}:</strong><br>
@@ -45,7 +45,7 @@ fetchBtn.addEventListener("click", () => {
                 return;
             }
 
-            // Display any other info normally
+           
             resultBox.textContent = `${infoKey}: ${value}`;
         })
         .catch(err => {
