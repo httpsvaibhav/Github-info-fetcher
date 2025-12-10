@@ -30,7 +30,6 @@ fetchBtn.addEventListener("click", () => {
             
             const value = data[infoKey];
 
-            // Handling null values
             if (value === null) {
                 resultBox.textContent = `${infoKey} : null`;
                 return;
